@@ -13,6 +13,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deprecated
 ### Removed -->
 
+## [vX.Y.Z] - UNRELEASED
+
+### Added
+
+- Added `commonLabels` to allow the addition of labels to all resources.
+- Added `serviceMonitor.endpointConfig` to allow customisation of the `ServiceMonitor` endpoint.
+
+### Deprecated
+
+- Deprecated `serviceMonitor.interval` in favour of `serviceMonitor.endpointConfig.interval`.
+
+### Removed
+
+- Removed chart default for `serviceMonitor.interval`, the interval should be the _Prometheus_ default if not overridden.
+
 ## [v2.5.2] - 2022-03-10
 
 ### Changed

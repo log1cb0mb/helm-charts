@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deprecated
 ### Removed -->
 
+## [vX.Y.Z] - UNRELEASED
+
+### Added
+
+- Added `commonLabels` to allow the addition of labels to all resources.
+
 ## [v1.3.2] - 2022-03-24
 
 ### Changed
