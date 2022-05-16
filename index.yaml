@@ -1,0 +1,41 @@
+apiVersion: v1
+entries:
+  tigera-operator:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: "Added metrics.serviceMonitor.endpointConfig to allow customisation of the ServiceMonitor endpoint."
+        - kind: changed
+          description: "Update Tigera Operator image to v1.27.0 (Calico v3.23.0)."
+        - kind: deprecated
+          description: "Deprecated metrics.serviceMonitor.interval in favour of metrics.serviceMonitor.endpointConfig.interval."
+        - kind: removed
+          description: "Removed chart default for metrics.serviceMonitor.interval, the interval should be the Prometheus default if not overridden."
+    apiVersion: v2
+    appVersion: 1.27.0
+    created: "2022-05-16T13:43:50.135943+03:00"
+    description: Helm chart for the Tigera Operator for Calico.
+    digest: e1d2cf53ced2fb2fb8613004d6c12de86f99641a127a6f723ecc8a8f87d408cc
+    home: https://www.tigera.io/
+    icon: https://avatars.githubusercontent.com/u/48935664?s=300
+    keywords:
+    - kubernetes
+    - calico
+    - tigera
+    - operator
+    - network
+    - policy
+    - plugin
+    maintainers:
+    - email: steve.hipwell@gmail.com
+      name: stevehipwell
+    name: tigera-operator
+    sources:
+    - https://github.com/tigera/operator
+    - https://github.com/projectcalico/calico
+    - https://github.com/stevehipwell/helm-charts/
+    type: application
+    urls:
+    - https://github.com/log1cb0mb/helm-charts/tigera-operator-2.2.0.tgz
+    version: 2.2.0
+generated: "2022-05-16T13:43:50.133269+03:00"
